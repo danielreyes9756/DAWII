@@ -1,0 +1,46 @@
+<%if current_user%>
+  <div class="container">
+    <h1>Formularios</h1>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Apellidos</th>
+          <th>Genero</th>
+          <th>Color</th>
+          <th>Like</th>
+          <th>Usuario</th>
+          <th colspan="2"></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @formularios.each do |formulario| %>
+          <tr>
+            <td><%= formulario.name %></td>
+            <td><%= formulario.surname %></td>
+            <td><%= formulario.genre %></td>
+            <td><span class="badge badge-pill" style="background-color: <%= formulario.color %>"><a class="text-white"><%= formulario.color%></span></a></td>
+            <% if formulario.like %>
+              <td> Sí </td>
+              <%else%>
+              <td> No </td>
+            <%end%>
+            <td><%= formulario.user.email %></td>
+            <td><%= link_to 'Ver formulario', formulario %></td>
+            <%if current_user == formulario.user %>
+              <td><%= link_to 'Eliminar', formulario, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <%else%>
+              <td>-</td>
+            <%end%>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+    <br>
+
+    <%= link_to 'Responder Formulario', new_formulario_path, :class=>"btn btn-primary" %>
+  </div>
+<%end%>

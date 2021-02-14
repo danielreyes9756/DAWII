@@ -1,0 +1,76 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #f1f4f9, #dff1ff);
+}
+
+section .color{
+    position: absolute;
+    filter: blur(150px);
+}
+
+section .color:nth-child(1){
+    top: 0;
+    width: 100%;
+    height: 30%;
+    background: #ff359b;
+}
+
+section .color:nth-child(2){
+    top: 45%;
+    left: 30px;
+    width: 60%;
+    height: 60%;
+    background: #fffd87;
+}
+
+section .color:nth-child(3){
+    bottom: 30%;
+    right: 20px;
+    width: 50%;
+    height: 50%;
+    background: #00d2ff;
+}
+
+.box{
+    position: relative;
+}
+
+.container{
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.5);    
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}

@@ -1,0 +1,44 @@
+@import '~bootstrap/scss/bootstrap';
+.margin-top{
+    margin-top:1.5em;   
+}
+.text-align{ text-align:center;}
+
+.field{
+    @extend .margin-top;
+    label{
+        @extend .text-uppercase;
+        @extend .text-secondary;
+    }
+    &:first-of-type{
+        margin-top:0;
+    }
+    input{
+        @extend .form-control;
+        font-size: 18px;
+        background-color:rgba(255,255,255,0.2);
+        border: none;
+        outline: none;
+        border-radius: 35px;
+        border: 1px solid rgba(255,255,255,0.2);
+        border-right: 1px solid rgba(255,255,255,0.2);
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+    input[type='checkbox']{
+        display: inline-block;
+        width: auto;
+        vertical-align: middle;
+        margin-right: 0.5em;
+    }
+}
+
+.container{
+    margin-top: 3em;
+    .btn {
+        margin-top: 1em;
+    }
+}
+
+.notice{
+    padding:10px;
+}

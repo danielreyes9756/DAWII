@@ -1,0 +1,9 @@
+<%if current_user%>
+    <div class="container">
+        <h1>Formulario</h1>
+
+        <%= render 'form', formulario: @formulario %>
+
+        <%= link_to 'Volver', formularios_path %>
+    </div>
+<%end%>

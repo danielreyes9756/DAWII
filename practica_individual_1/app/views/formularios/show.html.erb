@@ -1,0 +1,36 @@
+<%= if current_user%>
+  <div class="container" >
+    <h1> Formulario <%=@formulario.id %></h1>
+    <h4>Escrito por <strong><%=@formulario.user.email %></strong></h4>
+    <p>
+      <strong>Con nombre y apellidos:</strong>
+      
+    </p>
+
+    <p><%= @formulario.name %><%= @formulario.surname %></p>
+
+    <p>
+      <strong>Genero:</strong>
+      <p><%= @formulario.genre %><p>
+    </p>
+
+    <p>
+      <strong>Cuyo color favorito es:</strong>
+      <p><span class="badge badge-pill" style="background-color: <%= @formulario.color %>"><a class="text-white"><%= @formulario.color%></span></a></p>
+    </p>
+
+    <p>
+      
+      <% if @formulario.like %>
+        <strong>Le ha gustado el formulario</strong>
+      <%else%>
+        <strong>No le ha gustado el formulario</strong>
+      <%end%>
+    </p>
+
+    
+
+    <%= link_to 'Volver al indice', formularios_path, :class=>"btn btn-primary btn-lg btn-block" %>
+    <div>
+  <div>
+<%end%>
