@@ -12,7 +12,7 @@ Aportes:
 
 * Rails 6.1.1
 
-* Configuración de puertos: *por defecto 3000
+* Configuración de puertos: *por defecto 3000*
 
 * Database creation
 
