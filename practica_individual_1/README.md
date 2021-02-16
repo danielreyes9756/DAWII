@@ -2,26 +2,22 @@
 
 Proyecto realizado por Daniel Reyes García para la asignatura Desarrollo de Aplicaciones Web II o DAWII
 
-S
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
 Aportes:
 
-* Ruby version ruby 2.7.2p137 (2020-10-01 revision 5445e04352) [x64-mingw32]
+* Version de Ruby: *ruby 2.7.2p137 (2020-10-01 revision 5445e04352) [x64-mingw32]*
 
-* Rails 6.1.1
+* Version de Rails: *6.1.1*
 
 * Configuración de puertos: *por defecto 3000*
 
-* Database creation
+* Base de datos: *Usada la base de datos por defecto mysql-3*
 
-* Database initialization
+Para realizar el arranque del servidor, nos colocaremos en la carpeta del proyecto y haremos uso del comando *rails s* o *rails server*, para entrar en la consola de la base de datos del proyecto *rails c* o *rails console*
 
-* How to run the test suite
+Para la parte de los usuarios (login, register, modelo entidad usuario), se ha hecho uso de una gema llamada *devise*, esta gema se encarga de realizar todas las tareas de cifrado de contraseñas, autenticación y demas. Aprendido en https://codigofacilito.com curso de iniciación a rails, dejaría el enlace pero se encuentra actualmente caida a fecha de 16 de febrero de 2021
 
-* Services (job queues, cache servers, search engines, etc.)
+Para el formulario, lo he realizado como un CRUD, no obstante he limitado el Update, para crear este crud de formularios he utilizado el comando scaffolds, también aprendido en el curso de iniciación a rails nombrado anteriormente.
 
-* Deployment instructions
+Tengo cierta soltura con esta tecnología debido a que hicimos uso de esta en la asignatura DAWI.
 
-* ...
+Para acabar, el estilo se trata de una parte bootstrap (letras y botones) y una parte css/scss puro basada en https://www.youtube.com/watch?v=mW0Z1T8l7sU, es un youtuber que sigo desde hace un año y hace unas maravillas visuales en la parte de los estilos o del frontend.
