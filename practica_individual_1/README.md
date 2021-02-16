@@ -1,15 +1,18 @@
 # README
 
+Proyecto realizado por Daniel Reyes García para la asignatura Desarrollo de Aplicaciones Web II o DAWII
+
+S
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+Aportes:
 
-* Ruby version
+* Ruby version ruby 2.7.2p137 (2020-10-01 revision 5445e04352) [x64-mingw32]
 
-* System dependencies
+* Rails 6.1.1
 
-* Configuration
+* Configuración de puertos: *por defecto 3000
 
 * Database creation
 
