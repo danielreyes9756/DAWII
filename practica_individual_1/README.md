@@ -28,5 +28,5 @@ Existen dos ususarios ya creados:
 * cuenta1@gmail.com con contraseña cuenta1
 * prueba1@gmail.com con contraseña prueba1
 
-Para acabar, el estilo se trata de una parte bootstrap (letras y botones) y una parte css/scss puro basada en https://www.youtube.com/watch?v=mW0Z1T8l7sU, es un youtuber que sigo desde hace un año y hace unas maravillas visuales en la parte de los estilos o del frontend. Y los mockups se encuentran en una carpeta del proyecto llamado MOCKUPS.
+Para acabar, el estilo se trata de una parte bootstrap (letras y botones) y una parte css/scss puro basada en https://www.youtube.com/watch?v=mW0Z1T8l7sU, es un youtuber que sigo desde hace un año y hace unas maravillas visuales en la parte de los estilos o del frontend. Y los mockups se encuentran en una carpeta del proyecto llamado MOCKUPS o en https://xd.adobe.com/view/6b922600-e4fe-4eb5-b88d-9ac3f8a60e15-3ec1/.
 
